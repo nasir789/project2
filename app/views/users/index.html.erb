@@ -3,6 +3,7 @@
 <h2>User Accounts: </h2>
 <ul>
   <% @users.each do |user| %>
-    <%= link_to "User: #{user.name}", "/users/#{user.id}" %></li>
+    <li><%= link_to "User: #{user.name}", "/users/#{user.id}" %></li>
   <% end %>
+  <%= link_to 'User comments', controller: 'articles' %>
 </ul>

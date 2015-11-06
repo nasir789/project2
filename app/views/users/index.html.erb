@@ -1,0 +1,8 @@
+<h1>Hello, <%=current_user.name%></h1>
+
+<h2>User Accounts: </h2>
+<ul>
+  <% @users.each do |user| %>
+    <%= link_to "User: #{user.name}", "/users/#{user.id}" %></li>
+  <% end %>
+</ul>

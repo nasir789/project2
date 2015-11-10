@@ -3,10 +3,9 @@
   <%= @article.title %>
 </p>
 
-
 <p>
   <strong>Text:</strong>
-  <%= @article.text%>
+  <ul><%= @article.text%></ul>
 </p>
 
 <%= link_to 'Edit', edit_article_path(@article) %>
